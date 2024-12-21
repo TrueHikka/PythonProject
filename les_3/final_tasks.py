@@ -151,8 +151,6 @@ def second_implicit_expectation(driver):
         file_name = r'C:\Users\Lenovo\OneDrive\Рабочий стол\test.txt'
         with open(file_name, 'w'):
             pass
-        # current_directory = os.getcwd()
-        # print("Текущая рабочая директория:", current_directory)
 
         input_select_file = driver.find_element(By.CSS_SELECTOR, "input[type='file']")
         input_select_file.send_keys(file_name)
